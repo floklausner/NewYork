@@ -176,16 +176,18 @@ h1 {
 }
 
 .textBox {
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 1%;
+  margin-top: 2%;
   text-align: justify;
   float: right;
-  margin-right: 4%;
+  margin-right: 2%;
   width: 80vh;
-  height: 10vh;
+  height: 54vh;
 }
 
 .historyText {
   margin-top: 0%;
-  padding-top: 7%;
   color: black;
   font-family: 'Voces', cursive;
 }
@@ -259,12 +261,12 @@ img {
   margin-right: 10%;
 }
 
-video {
+/*video {
   align-items: center;
   padding-left: 12%;
 }
 
-/*.social {
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
