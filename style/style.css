@@ -119,9 +119,9 @@ h1 {
 #navbar {
   font-size: 2.2vh;
   overflow: hidden;
-  padding-left: 2%;
+  padding-left: 2vh;
   transition: all 0.3s linear;
-  width: 40%;
+  width: 40vh;
 }
 
 #navbar a {
@@ -130,7 +130,6 @@ h1 {
 }
 
 #navbar p {
-  width: 30%;
   padding: 0%;
   margin: 0%;
 }
@@ -152,7 +151,7 @@ h1 {
 }
 
 .navbarPages {
-  padding-left: 2%;
+  padding-left: 2vh;
 }
 
 .navbarPages a {
@@ -161,7 +160,6 @@ h1 {
 }
 
 .navbarPages p {
-  width: 9%;
   padding: 0%;
   margin: 0%;
 }
@@ -197,7 +195,7 @@ h1 {
   float: right;
   margin-right: 2%;
   width: 80vh;
-  height: 54vh;
+  height: 56vh;
 }
 
 .historyText {
@@ -225,6 +223,10 @@ h1 {
 .timesPage h1 {
   padding-top: 2.5vh;
   font-size: 4.3vh;
+  font-family: 'IM Fell English SC', serif;
+}
+
+.timesPage .menu {
   font-family: 'IM Fell English SC', serif;
 }
 

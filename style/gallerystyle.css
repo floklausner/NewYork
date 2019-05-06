@@ -43,9 +43,9 @@ h1 {
 #navbar {
   font-size: 2.2vh;
   overflow: hidden;
-  padding-left: 2%;
+  padding-left: 2vh;
   transition: all 0.3s linear;
-  width: 40%;
+  width: 40vh;
 }
 
 #navbar a {
@@ -54,7 +54,6 @@ h1 {
 }
 
 #navbar p {
-  width: 30%;
   padding: 0%;
   margin: 0%;
 }
@@ -76,7 +75,7 @@ h1 {
 }
 
 .navbarPages {
-  padding-left: 2%;
+  padding-left: 2vh;
 }
 
 .navbarPages a {
@@ -85,7 +84,6 @@ h1 {
 }
 
 .navbarPages p {
-  width: 9%;
   padding: 0%;
   margin: 0%;
 }
