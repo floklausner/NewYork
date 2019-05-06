@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+  font-size: 4.2vh;
   padding-left: 2%;
   padding-top: 1%;
   margin-top: 0%;
@@ -19,6 +20,7 @@ h1 {
 }
 
 .clock {
+  font-size: 2.6vh;
   padding-right: 2%;;
   font-family: 'Voces', cursive;
   float: right;
@@ -69,31 +71,42 @@ h1 {
 .islandPage {
   background: url('../images/islandWallpaper.jpg');
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contactPage {
   background: url('../images/skyline.jpg');
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .flightPage {
   background: url('../images/islandWallpaper.jpg');
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .subwayPage {
   background: url('../images/islandWallpaper.jpg');
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .taxiPage {
   background: url('../images/islandWallpaper.jpg');
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .galleryPage {
   background-color: grey;
   height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .timesPage {
@@ -104,6 +117,7 @@ h1 {
 }
 
 #navbar {
+  font-size: 2.2vh;
   overflow: hidden;
   padding-left: 2%;
   transition: all 0.3s linear;
@@ -177,8 +191,8 @@ h1 {
 
 .textBox {
   background-color: rgba(255, 0, 0, 0.5);
-  padding: 1%;
-  margin-top: 2%;
+  padding: 2vh;
+  margin-top: 2vh;
   text-align: justify;
   float: right;
   margin-right: 2%;
@@ -187,7 +201,8 @@ h1 {
 }
 
 .historyText {
-  margin-top: 0%;
+  font-size: 2.2vh;
+  margin-top: 0vh;
   color: black;
   font-family: 'Voces', cursive;
 }
@@ -255,8 +270,8 @@ img {
 }
 
 .pictureMap {
-  height: 50%;
-  width: 30%;
+  height: 80vh;
+  width: 50vh;
   float: right;
   margin-right: 10%;
 }
@@ -302,7 +317,7 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 20%;
-  font-size: 250%;
+  font-size: 4.5vh;
   color: black;
 }
 
