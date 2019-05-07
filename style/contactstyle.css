@@ -7,29 +7,10 @@ body {
 }
 
 h1 {
-  padding-left: 2%;
-  padding-top: 1%;
-  margin-top: 0%;
+  font-size: 4vh;
+  padding-top: 1.5vh;
+  margin-top: 0vh;
   font-family: 'Voces', cursive;
-}
-
-#uhr {
-  font-size: 200%;
-  float: right;
-}
-
-.clock {
-  padding-right: 2%;;
-  font-family: 'Voces', cursive;
-  float: right;
-}
-
-.clock h3 {
-  margin: 0%;
-}
-
-.clock p {
-  margin: 0%;
 }
 
 .title a {
@@ -59,47 +40,8 @@ h1 {
   color: black;
 }
 
-#page1 {
-  background: url('../images/newyork_wallpaper_01.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.islandPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-}
-
 .contactPage {
   background: url('../images/skyline.jpg');
-  height: 100vh;
-}
-
-.flightPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-}
-
-.subwayPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-}
-
-.taxiPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-}
-
-.galleryPage {
-  background-color: grey;
-  height: 100vh;
-}
-
-.timesPage {
-  background: url('../images/times.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
 }
 
@@ -166,87 +108,16 @@ h1 {
   color: black;
 }
 
-#content {
-  background: url('../images/newyork_wallpaper_03.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.textBox {
-  text-align: justify;
-  float: right;
-  margin-right: 4%;
-  width: 80vh;
-  height: 10vh;
-}
-
-.historyText {
-  margin-top: 0%;
-  padding-top: 7%;
-  color: black;
-  font-family: 'Voces', cursive;
-}
-
-.islandText {
-  height: 50%;
-  width: 40%;
-  text-align: justify;
-  float: right;
-  margin-right: 4%;
-  font-family: 'Voces', cursive;
-}
-
-.islandText p {
-  padding-top: 0%;
-  margin-top: 0%;
-}
-
-.timesText {
-  height: 50%;
-  width: 40%;
-  text-align: justify;
-  float: right;
-  margin-right: 4%;
-  font-family: 'Voces', cursive;
-}
-
-.timesText p {
-  padding-top: 0%;
-  margin-top: 0%;
-}
-
-.timesText a p {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 1%;
-  width: 100%;
-  background-color: black;
-}
-
-.timesText a p:hover {
-  color: red;
-}
-
-.timesText a:link {
-  color: black;
-}
-
-.timesText a:visited {
-  color: black;
-}
-
-.timesText a:active {
-  color: black;
-}
-
 img {
   width: 5%;
   display: inline-block;
 }
 
 #menu {
+  font-size: 4vh;
+  padding-top: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
   float: left;
 }
 
@@ -281,18 +152,6 @@ img {
 .social a:active {
   color: black;
 }*/
-
-.arrow {
-  display: flex;
-  justify-content: center;
-  margin-top: 20%;
-  font-size: 250%;
-  color: black;
-}
-
-.arrow i:hover {
-  color: #d50000;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -551,4 +410,13 @@ fieldset {
 }
 .button:focus {
   outline: none;
+}
+
+.menu i {
+  transition: all 0.3s linear;
+  color: black;
+}
+
+.menu i:hover {
+  color: #d50000;
 }

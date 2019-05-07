@@ -7,10 +7,9 @@ body {
 }
 
 h1 {
-  font-size: 4.2vh;
-  padding-left: 2%;
-  padding-top: 1%;
-  margin-top: 0%;
+  font-size: 4vh;
+  padding-top: 1.5vh;
+  margin-top: 0vh;
   font-family: 'Voces', cursive;
 }
 
@@ -221,8 +220,9 @@ h1 {
 }
 
 .timesPage h1 {
-  padding-top: 2.5vh;
-  font-size: 4.3vh;
+  font-size: 4vh;
+  padding-top: 1.7vh;
+  margin-top: 0vh;
   font-family: 'IM Fell English SC', serif;
 }
 
@@ -277,6 +277,10 @@ img {
 }
 
 #menu {
+  font-size: 4vh;
+  padding-top: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
   float: left;
 }
 
@@ -323,6 +327,19 @@ img {
 .social a:active {
   color: black;
 }*/
+
+.menu i {
+  transition: all 0.3s linear;
+  color: black;
+}
+
+.menu i:hover {
+  color: #d50000;
+}
+
+.arrow i {
+  transition: all 0.3s linear;
+}
 
 .arrow {
   display: flex;

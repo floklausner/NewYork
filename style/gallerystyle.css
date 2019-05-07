@@ -7,10 +7,9 @@ body {
 }
 
 h1 {
-  font-size: 4.2vh;
-  padding-left: 2%;
-  padding-top: 1%;
-  margin-top: 0%;
+  font-size: 4vh;
+  padding-top: 1.5vh;
+  margin-top: 0vh;
   font-family: 'Voces', cursive;
 }
 
@@ -172,16 +171,25 @@ h1 {
   display: none;
 }
 
-i {
+.menu i {
+  transition: all 0.3s linear;
+  color: black;
+}
+
+.menu i:hover {
+  color: #d50000;
+}
+
+.buttons i {
   transition: all 0.3s linear;
   color: black;
   padding: 20%;
   font-size: 200%;
 }
 
-i:hover {
+.buttons i:hover {
   cursor: pointer;
-  color: darkgray;
+  color: #d50000;
 }
 
 .buttons {
@@ -217,5 +225,9 @@ img {
 }
 
 #menu {
+  font-size: 4vh;
+  padding-top: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
   float: left;
 }
