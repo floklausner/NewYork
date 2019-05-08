@@ -21,6 +21,14 @@ window.addEventListener('load', () => {
      navbar.style.display = 'none';
    }
   });
+
+  let canvas = document.getElementById('canvas');
+  let line = canvas.getContext("2d");
+  line.beginPath();
+  line.moveTo(window.clientWidth / 2, window.clientHeight / 2);
+  line.lineTo(300, 500);
+  line.stroke;
+
 });
 
 (function () {
@@ -72,6 +80,8 @@ function goRight() {
   images[7].src = images[8].src;
   images[8].src = rack;
 }
+
+
 
 /*var latlng = new google.maps.LatLng(-34.397, 150.644);
 var myOptions = {
