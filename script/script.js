@@ -21,14 +21,6 @@ window.addEventListener('load', () => {
      navbar.style.display = 'none';
    }
   });
-
-  let canvas = document.getElementById('canvas');
-  let line = canvas.getContext("2d");
-  line.beginPath();
-  line.moveTo(window.clientWidth / 2, window.clientHeight / 2);
-  line.lineTo(300, 500);
-  line.stroke;
-
 });
 
 (function () {
