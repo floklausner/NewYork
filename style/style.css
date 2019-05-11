@@ -315,9 +315,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 100vh;
+  border-radius: 10000px;
   background-color: black;
-  transition: transform 1000ms;
+  transition: transform 700ms;
 }
 
 #canvas {
