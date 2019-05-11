@@ -6,76 +6,60 @@ body {
   margin: 0%;
 }
 
+header h1 {
+  width: 100vw;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding-bottom: 0vh;
+  font-size: 4vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Voces', cursive;
+}
+
 h1 {
   font-size: 4vh;
-  padding-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  font-family: 'Voces', cursive;
+}
+
+h2 {
+  font-size: 3vh;
+  padding-left: 1vw;
   padding-top: 1.5vh;
   margin-top: 0vh;
   transition: all 0.3s linear;
   font-family: 'Voces', cursive;
 }
 
-.back a {
+#back a {
   text-decoration: none;
   font-family: 'Voces', cursive;
 }
 
-.back p {
+#back p {
   padding: 0%;
   margin: 0%;
 }
 
-.back p:hover {
+#back p:hover {
   cursor: pointer;
   color: #d50000;
 }
 
-.back a:link {
+#back a:link {
   color: black;
   display: inline;
 }
 
-.back a:visited {
+#back a:visited {
   color: black;
 }
 
-.back a:active {
+#back a:active {
   color: black;
-}
-
-#page1 {
-  background: url('../images/newyork_wallpaper_01.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.islandPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contactPage {
-  background: url('../images/skyline.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.flightPage {
-  background: url('../images/airport.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.subwayPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .taxiPage {
@@ -83,19 +67,6 @@ h1 {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.galleryPage {
-  background-color: grey;
-  height: 100vh;
-  background-repeat: no-repeat;
-}
-
-.timesPage {
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 
 #navbar {
@@ -163,103 +134,6 @@ h1 {
   color: black;
 }
 
-#content {
-  background: url('../images/newyork_wallpaper_03.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.textBox {
-  background-color: rgba(255, 0, 0, 0.5);
-  padding: 2vh;
-  margin-top: 2vh;
-  text-align: justify;
-  float: right;
-  margin-right: 2%;
-  width: 80vh;
-  height: 56vh;
-}
-
-.historyText {
-  font-size: 2.2vh;
-  margin-top: 0vh;
-  color: black;
-  font-family: 'Voces', cursive;
-}
-
-.islandText {
-  font-size: 2.2vh;
-  width: 80vh;
-  height: 54vh;
-  text-align: justify;
-  float: right;
-  margin-right: 4%;
-  font-family: 'Voces', cursive;
-}
-
-.islandText p {
-  padding-top: 0%;
-  margin-top: 0%;
-}
-
-.timesPage h1 {
-  font-size: 4vh;
-  padding-top: 1.7vh;
-  margin-top: 0vh;
-  font-family: 'IM Fell English SC', serif;
-}
-
-.timesPage .menu {
-  font-family: 'IM Fell English SC', serif;
-}
-
-.timesText {
-  font-size: 2.2vh;
-  width: 80vh;
-  height: 54vh;
-  text-align: justify;
-  float: right;
-  margin-right: 4%;
-  font-family: 'IM Fell English SC', serif;
-}
-
-.timesText p {
-  padding-top: 0%;
-  margin-top: 0%;
-  font-family: 'IM Fell English SC', serif;
-}
-
-.timesText a p {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 1%;
-  width: 100%;
-  background-color: black;
-}
-
-.timesText a p:hover {
-  color: red;
-}
-
-.timesText a:link {
-  color: black;
-}
-
-.timesText a:visited {
-  color: black;
-}
-
-.timesText a:active {
-  color: black;
-}
-
-img {
-  width: 5%;
-  display: inline-block;
-}
-
 #menu {
   font-size: 4vh;
   padding-top: 2vh;
@@ -307,43 +181,6 @@ img {
   pointer-events: none;
 }
 
-/*video {
-  align-items: center;
-  padding-left: 12%;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  font-size: 200%;
-  padding-left: 2%;
-}
-
-.social a {
-  padding: 0.5%;
-  list-style-type: none;
-  text-decoration:none;
-}
-
-.social a:link {
-  color: black;
-}
-
-.social a:hover {
-  color: black  ;
-}
-
-.social a:visited {
-  color: black;
-}
-
-.social a:active {
-  color: black;
-}*/
-
 .menu i {
   transition: all 0.3s linear;
   color: black;
@@ -351,22 +188,6 @@ img {
 
 .menu i:hover {
   cursor: pointer;
-  color: #d50000;
-}
-
-.arrow i {
-  transition: all 0.3s linear;
-}
-
-.arrow {
-  display: flex;
-  justify-content: center;
-  margin-top: 20%;
-  font-size: 4.5vh;
-  color: black;
-}
-
-.arrow i:hover {
   color: #d50000;
 }
 
@@ -389,13 +210,42 @@ img {
   background: #555;
 }
 
-.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 0.5%;
-  font-family: 'IM Fell English SC', serif;
-  font-size: 10vh;
+.historyTaxiContent {
+  display: flex;
+  margin: 0 0.2vw;
+  margin-top: 7vh;
+}
+
+.late {
+  flex-wrap: wrap;
+  flex: 50%;
+  max-width: 50%;
+  background-color: rgba(255, 0, 0, 0.5);
+  margin: 0.1vw;
+  /*width: 49%;*/
+}
+
+.mid {
+  flex: 50%;
+  max-width: 50%;
+  background-color: rgba(255, 0, 0, 0.7);
+  margin: 0.1vw;
+  /*width: 49%;*/
+}
+
+.mid2 {
+  flex: 50%;
+  max-width: 50%;
+  background-color: rgba(255, 0, 0, 0.5);
+  margin: 0.1vw;
+  /*width: 49%;*/
+}
+
+.historyTaxiContent p {
+  padding: 0.5vw;
+  text-align: justify;
+  font-size: 1.7vh;
+  margin-top: 0vh;
+  color: black;
+  font-family: 'Voces', cursive;
 }
