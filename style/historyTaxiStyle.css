@@ -7,8 +7,6 @@ body {
 }
 
 header h1 {
-  width: 100vw;
-  background-color: rgba(255, 0, 0, 0.5);
   padding-bottom: 0vh;
   font-size: 4vh;
   align-items: center;
@@ -221,7 +219,7 @@ h2 {
   flex: 50%;
   max-width: 50%;
   background-color: rgba(255, 0, 0, 0.5);
-  margin: 0.1vw;
+  margin: 5vw;
   /*width: 49%;*/
 }
 
@@ -229,15 +227,7 @@ h2 {
   flex: 50%;
   max-width: 50%;
   background-color: rgba(255, 0, 0, 0.7);
-  margin: 0.1vw;
-  /*width: 49%;*/
-}
-
-.mid2 {
-  flex: 50%;
-  max-width: 50%;
-  background-color: rgba(255, 0, 0, 0.5);
-  margin: 0.1vw;
+  margin: 5vw;
   /*width: 49%;*/
 }
 

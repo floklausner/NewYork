@@ -41,7 +41,8 @@ h1 {
 }
 
 .contactPage {
-  background: url('../images/skyline.jpg');
+  background: url('../images/clouds.jpg');
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -211,7 +212,7 @@ textarea::before {
   width: 400px;
 }
 
-.button-container {
+-container {
   text-align: center;
 }
 
@@ -354,7 +355,7 @@ fieldset {
   left: 0;
 }
 
-.button {
+#button {
   position: relative;
   background: currentColor;
   border: 1px solid currentColor;
@@ -374,12 +375,16 @@ fieldset {
   display:block;
   transition:all 1s;
 }
-.button span {
+
+#button span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   color: #fff;
   position: relative;
   z-index: 1;
 }
-.button::before {
+#button::before {
   content: "";
   position: absolute;
   background: #AF1500;
@@ -395,13 +400,13 @@ fieldset {
   -webkit-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
 }
-.button:hover {
+#button:hover {
   color: #AF1500;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
     0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
-.button:hover::before,
-.button:focus::before {
+#button:hover::before,
+#button:focus::before {
   -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
@@ -411,7 +416,7 @@ fieldset {
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
 }
-.button:focus {
+#button:focus {
   outline: none;
 }
 
