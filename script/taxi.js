@@ -28,9 +28,9 @@ window.addEventListener('load', () => {
   window.addEventListener('mousemove', (event) => {
     line.clearRect(0, 0, canvas.width, canvas.height);
     line.beginPath();
-    line.moveTo(innerWidth / 2 - (innerHeight / 100) * 15.4, innerHeight / 2 + (innerHeight / 100) * 4.55);
+    line.moveTo(innerWidth / 2 - (innerHeight / 100) * 21.5, innerHeight / 2 + (innerHeight / 100) * 16.8);
     line.lineTo(event.clientX, event.clientY);
-    line.strokeStyle = 'black';
+    line.strokeStyle = '#c69143';
     line.stroke();
   });
 

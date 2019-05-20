@@ -302,17 +302,17 @@ img {
 
 /*.taxiPic {
   width: 100vw;
-}
+}*/
 
 #taxi {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 100vh;
+  margin-left: 35vw;
+  margin-top: 50vh;
+  width: 10vw;
+  height: 10vh;
   cursor: pointer;
   z-index: 1;
-}*/
+}
 
 #circle {
   width: 100vw;
