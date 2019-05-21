@@ -107,7 +107,7 @@ h1 {
 }
 
 .galleryPage {
-  background-color: grey;
+  background: black;
   height: 100vh;
   background-repeat: no-repeat;
 }
@@ -126,7 +126,7 @@ h1 {
   padding-left: 1.3vw;
   padding-top: 2vh;
   transition: all 0.3s linear;
-  width: 30vh;
+  width: 25vh;
   height: 80vh;
   position: absolute;
 }
