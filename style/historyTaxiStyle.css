@@ -68,11 +68,14 @@ h2 {
 }
 
 #navbar {
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 2.2vh;
   overflow: hidden;
   padding-left: 1.3vw;
+  padding-top: 2vh;
   transition: all 0.3s linear;
-  width: 40vh;
+  width: 30vh;
+  height: 80vh;
   position: absolute;
 }
 
@@ -87,19 +90,22 @@ h2 {
 }
 
 #navbar p:hover {
-  color: #d50000;
+  color: black;
 }
 
 #navbar a:link {
-  color: black;
+  /*color: black;*/
+  color: #d50000;
 }
 
 #navbar a:visited {
-  color: black;
+  /*color: black;*/
+  color: #d50000;
 }
 
 #navbar a:active {
-  color: black;
+  /*color: black;*/
+  color: #d50000;
 }
 
 .navbarPages {

@@ -44,7 +44,7 @@ document.getElementById('button').addEventListener('click', () => {
   } else if (textarea.value === "") {
     textarea.style.borderBottom = "0.0625rem solid red"
     userfdb.textContent = "Textarea can't be empty"
-  }
+  } 
 });
 
   function validateEmail(email) {
