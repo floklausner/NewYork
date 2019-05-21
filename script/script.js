@@ -8,21 +8,6 @@ $(document).ready(function (){
     });
 });
 
-window.addEventListener('load', () => {
-  let navbar = document.getElementById('navbar');
-  let maxHeight = navbar.clientHeight;
-
-  navbar.style.display = 'none';
-
-  document.getElementById('menu').addEventListener('click', () => {
-    if (navbar.style.display === 'none') {
-        navbar.style.display = 'block';
-   } else {
-     navbar.style.display = 'none';
-   }
-  });
-});
-
 (function () {
   function uhrzeit() {
     let jetzt = new Date(),

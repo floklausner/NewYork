@@ -50,10 +50,11 @@ h1 {
   overflow: hidden;
   padding-left: 1.3vw;
   padding-top: 2vh;
+  padding-bottom: 2vh;
   transition: all 0.3s linear;
-  width: 25vh;
-  height: 80vh;
+  width: 12vw;
   position: absolute;
+  left: -14vw;
 }
 
 #navbar a {
@@ -67,22 +68,20 @@ h1 {
 }
 
 #navbar p:hover {
-  color: black;
+  /*color: black;*/
+  color: #d50000;
 }
 
 #navbar a:link {
-  /*color: black;*/
-  color: #d50000;
+  color: black;
 }
 
 #navbar a:visited {
-  /*color: black;*/
-  color: #d50000;
+  color: black;
 }
 
 #navbar a:active {
-  /*color: black;*/
-  color: #d50000;
+  color: black;
 }
 
 .navbarPages {

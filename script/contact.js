@@ -1,17 +1,17 @@
 'use strict'
 
 window.addEventListener('load', () => {
-  let navbar = document.getElementById('navbar');
-  let maxHeight = navbar.clientHeight;
-
-  navbar.style.display = 'none';
+  const navbar = document.getElementById('navbar');
+  let visible = false;
 
   document.getElementById('menu').addEventListener('click', () => {
-    if (navbar.style.display === 'none') {
-        navbar.style.display = 'block';
-   } else {
-     navbar.style.display = 'none';
-   }
+    if (visible) {
+      navbar.style.left = '-14vw';
+      visible = false;
+    } else {
+      navbar.style.left = '0vw';
+      visible = true;
+    }
   });
 
 document.getElementById('button').addEventListener('click', () => {
@@ -44,7 +44,7 @@ document.getElementById('button').addEventListener('click', () => {
   } else if (textarea.value === "") {
     textarea.style.borderBottom = "0.0625rem solid red"
     userfdb.textContent = "Textarea can't be empty"
-  } 
+  }
 });
 
   function validateEmail(email) {
