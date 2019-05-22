@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+  width: 13vw;
   font-size: 4vh;
   padding-top: 1.5vh;
   margin-top: 0vh;
@@ -41,6 +42,7 @@ h1 {
 }
 
 .title p {
+  transition: all 0.3s linear;
   width: auto;
   padding: 0%;
   margin: 0%;
@@ -139,6 +141,7 @@ h1 {
 }
 
 #navbar p {
+  transition: all 0.25s linear;
   padding: 0%;
   margin: 0%;
 }
@@ -246,6 +249,7 @@ h1 {
 }
 
 .timesText {
+  padding-top: 2vh;
   font-size: 2vh;
   width: 80vh;
   height: 54vh;
@@ -258,20 +262,25 @@ h1 {
 .timesText p {
   padding-top: 0%;
   margin-top: 0%;
+  transition: all 0.3s linear;
   font-family: 'IM Fell English SC', serif;
 }
 
 .timesText a p {
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: center;
   padding: 1%;
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.timesText a {
+  text-decoration: none;
 }
 
 .timesText a p:hover {
-  color: red;
+  color: #d50000;
 }
 
 .timesText a:link {
@@ -284,6 +293,12 @@ h1 {
 
 .timesText a:active {
   color: black;
+}
+
+#youtube {
+  padding-left: 14.8vw;
+  width: 560px;
+  height: 315px;
 }
 
 img {
@@ -429,4 +444,28 @@ img {
   padding-bottom: 0.5%;
   font-family: 'IM Fell English SC', serif;
   font-size: 10vh;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer p {
+  transition: all 0.3s linear;
+}
+
+.footer a p:hover {
+  color: #d50000;
+}
+
+.footer a:link {
+  color: black;
+}
+
+.footer a:visited {
+  color: black;
+}
+
+.footer a:active {
+  color: black;
 }
