@@ -471,25 +471,17 @@ video {
 
 /* Color Panel */
 
-#colorPanel {
-
-}
-
 #colorPanelWrapper {
   position: absolute;
   right: 0;
   bottom: 0;
   width: auto;
+  padding: 0.5%;
 }
 
 #colorPanelWrapper div {
+  display: inline-block;
   width: 2vw;
   height: 2vw;
-  margin: 1%
-  display: inline-block;
-  position: relative !important;
-}
-
-#colorPanelWrapper div div {
-
+  margin-right: 1vw;
 }

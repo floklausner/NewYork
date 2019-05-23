@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-  const colors = ['yellow', 'blue', 'green', 'violet', 'orange', '#d50000'];
+  const colors = ['yellow', 'blue', 'green', '#8904B1', 'orange', '#d50000'];
 
   for (let i = 0; i < colors.length; i++) {
 
@@ -13,34 +13,38 @@ window.addEventListener('load', () => {
     let outputArr = [colorBox];
 
     for (let i = 0; i < outputArr.length; i++) {
-      setTimeout(() => {
         outputArr[i].addEventListener('click', () => {
           const heading  = document.getElementById('headline');
-          // const burger = document.getElementById('menuBurger');
-          const burger = document.getElementsByClassName('title')[0].firstElementChild.firstElementChild;
+          const burger = document.getElementById('menu');
           const arrow = document.getElementById('arrowDown');
 
-          const elements = [heading, burger];
-
           heading.addEventListener('mouseover', () => {
-            for (let i = 0; i < elements.length; i++) {
-              elements[i].style.color = eintragData[i];
-            }
             heading.style.color = eintragData[i];
-            burger.style.color = eintragData[i];
           });
 
           heading.addEventListener('mouseout', () => {
-            for (let i = 0; i < elements.length; i++) {
-              elements[i].style.color = 'black';
-            }
             heading.style.color = 'black';
+          });
+
+          burger.addEventListener('mouseover', () => {
+            burger.style.color = eintragData[i];
+          });
+
+          burger.addEventListener('mouseout', () => {
             burger.style.color = 'black';
           });
+
+          arrow.addEventListener('mouseover', () => {
+            arrow.style.color = eintragData[i];
+          });
+
+          arrow.addEventListener('mouseout', () => {
+            arrow.style.color = 'black';
+          });
+
         });
         outputArr[i].style.backgroundColor = eintragData[i];
         newColor.appendChild(outputArr[i]);
-      }, 250);
     }
     contentWrapper.appendChild(newColor);
   }
