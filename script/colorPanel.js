@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-  const colors = ['yellow', 'blue', 'green', '#8904B1', 'orange', '#d50000'];
+  const colors = ['#8904B1', 'blue', 'orange', 'yellow', 'green', '#d50000'];
 
   for (let i = 0; i < colors.length; i++) {
 
