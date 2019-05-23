@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
           const times = document.getElementById('navTimes');
           const contact = document.getElementById('navContact');
           const about = document.getElementById('navAbout');
+          // const textBoxColor = document.getElementById('textBoxColor');
 
           // Heading
           heading.addEventListener('mouseover', () => {
@@ -104,6 +105,11 @@ window.addEventListener('load', () => {
           navAbout.addEventListener('mouseout', () => {
             navAbout.style.color = 'black';
           });
+
+          // textBox
+          // textBoxColor.addEventListener('click', () => {
+          //   textBoxColor.style.backgroundColor = eintragData[i];
+          // });
 
         });
         outputArr[i].style.backgroundColor = eintragData[i];
