@@ -212,26 +212,62 @@ h1 {
 .textBoxAbout {
   width: 42vw;
   margin: 0 auto;
-  padding-top: 0.5vh;
+  padding-top: 2vh;
   padding-bottom: 0.5vh;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   text-align: justify;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.9vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 2.2vh;
   font-family: 'Voces', cursive;
 }
 
 .aboutText {
   background-color: rgba(255, 0, 0, 0.5);
   padding: 2vh;
-  margin: 0.5vh;
+  margin-bottom: 6.5vh;
 }
 
 .taskText {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2vh;
-  margin: 0.5vh;
+}
+
+.socialAbout {
+  font-size: 1vw;
+}
+
+.socialAbout p {
+  transition: all 0.5s linear;
+  border: 1px solid black;
+  text-align: center;
+  width: 10vw;
+  padding: 0%;
+  margin: 0%;
+  margin: 0 auto;
+}
+
+.socialAbout p:hover  {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: black;
+}
+
+.socialAbout a {
+  padding: 0.5vh;
+  list-style-type: none;
+  text-decoration:none;
+}
+
+.socialAbout a:link {
+  color: black;
+}
+
+.socialAbout a:visited {
+  color: black;
+}
+
+.socialAbout a:active {
+  color: black;
 }
 
 .islandText p {
@@ -359,38 +395,6 @@ img {
 video {
   align-items: center;
   padding-left: 12%;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  font-size: 200%;
-  padding-left: 2%;
-}
-
-.social a {
-  padding: 0.5%;
-  list-style-type: none;
-  text-decoration:none;
-}
-
-.social a:link {
-  color: black;
-}
-
-.social a:hover {
-  color: black  ;
-}
-
-.social a:visited {
-  color: black;
-}
-
-.social a:active {
-  color: black;
 }
 
 .menu i {
