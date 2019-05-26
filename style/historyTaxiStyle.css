@@ -38,6 +38,7 @@ h2 {
 }
 
 #back p {
+  transition: all 0.25s linear;
   padding: 0%;
   margin: 0%;
 }

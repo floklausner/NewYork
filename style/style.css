@@ -16,14 +16,14 @@ h1 {
 }
 
 #uhr {
-  font-size: 200%;
+  font-size: 5vh;
   float: right;
   position: absolute;
 }
 
 .clock {
   font-size: 2.6vh;
-  padding-right: 2%;;
+  padding-right: 1.5vw;
   font-family: 'Voces', cursive;
   float: right;
 }
@@ -74,14 +74,7 @@ h1 {
 }
 
 .aboutPage {
-  background: url('../images/islandWallpaper.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contactPage {
-  background: url('../images/skyline.jpg');
+  background: url('../images/clouds.jpg');
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,20 +209,29 @@ h1 {
   font-family: 'Voces', cursive;
 }
 
-.aboutTextbox {
-  background-color: rgba(255, 0, 0, 0.5);
-  padding: 2vh;
-  margin-right: 2vw;
+.textBoxAbout {
+  width: 42vw;
+  margin: 0 auto;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   text-align: justify;
-  float: right;
-  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.9vh;
+  font-family: 'Voces', cursive;
 }
 
 .aboutText {
-  font-size: 1.9vh;
-  text-align: justify;
-  float: right;
-  font-family: 'Voces', cursive;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 2vh;
+  margin: 0.5vh;
+}
+
+.taskText {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2vh;
+  margin: 0.5vh;
 }
 
 .islandText p {
@@ -297,8 +299,9 @@ h1 {
 
 #youtube {
   padding-left: 14.8vw;
-  width: 560px;
-  height: 315px;
+  width: 40vw;
+  height: 45vh;
+  user-select: none;
 }
 
 img {
