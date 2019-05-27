@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style/gallerystyle.css">
+    <link rel="stylesheet" href="../style/colorPanel.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
@@ -10,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="../script/script.js"></script>
+    <script src="../script/galleryChangeHoverColor.js"></script>
     <script src="../script/navAnimation.js" charset="utf-8"></script>
     <title>Gallery</title>
   </head>
@@ -22,23 +24,23 @@
             <i id="menu" class="fas fa-bars"></i>
           </div>
 
-          <a href="../index.html"><h1><p>new york</p></h1></a>
+          <a href="../index.html"><h1><p id="headline">new york</p></h1></a>
         </div>
 
         <div id="navbar">
-          <a href="gallery.html"><p>Gallery</p></a>
+          <a href="gallery.html"><p id="navGallery">Gallery</p></a>
           <br>
-          <a href="subway.html"><p>Subway</p></a>
+          <a href="subway.html"><p id="navSubway">Subway</p></a>
           <br>
-          <a href="taxi.html"><p>Taxi</p></a>
+          <a href="taxi.html"><p id="navTaxi">Taxi</p></a>
           <br>
-          <a href="times.html"><p>New York Times</p></a>
+          <a href="times.html"><p id="navTimes">New York Times</p></a>
           <!--<br>
-          <a href="flight.html"><p>Book a Flight</p></a>-->
+          <a href="pages/flight.html"><p>Book a Flight</p></a>-->
           <br>
-          <a href="contact.html"><p>Contact me</p></a>
+          <a href="contact.html"><p id="navContact">Contact me</p></a>
           <br>
-          <a href="about.html"><p>About me</p></a>
+          <a href="about.html"><p id="navAbout">About me</p></a>
         </div>
 
         <div class="img">
@@ -54,11 +56,16 @@
         </div>
 
         <div class="buttons">
-          <p onclick="goLeft()"><i class="fas fa-arrow-left"></i></p>
-          <p onclick="goRight()"><i class="fas fa-arrow-right"></i></p>
+          <p onclick="goLeft()"><i id="arrowLeft" class="fas fa-arrow-left"></i></p>
+          <p onclick="goRight()"><i id="arrowRight" class="fas fa-arrow-right"></i></p>
         </div>
 
       </header>
+
+      <div id="colorPanel">
+        <div id="colorPanelWrapper">
+        </div>
+      </div>
 
     </div>
 

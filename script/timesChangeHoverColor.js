@@ -2,13 +2,16 @@ window.addEventListener('load', () => {
 
   const heading  = document.getElementById('headline');
   const burger = document.getElementById('menu');
-  const arrow = document.getElementById('arrowDown');
   const gallery = document.getElementById('navGallery');
   const subway = document.getElementById('navSubway');
   const taxi = document.getElementById('navTaxi');
   const times = document.getElementById('navTimes');
   const contact = document.getElementById('navContact');
   const about = document.getElementById('navAbout');
+  const footer = document.getElementById('timesFooter');
+  const instagram = document.getElementById('timesIG');
+  const twitter = document.getElementById('timesTW');
+  const youtube = document.getElementById('timesYT');
   let hoverColor;
 
   if (!sessionStorage.getItem('hoverColor')) {
@@ -34,67 +37,94 @@ window.addEventListener('load', () => {
     burger.style.color = 'black';
   });
 
-  // Arrow
-  arrow.addEventListener('mouseover', () => {
-    arrow.style.color = hoverColor;
-  });
-
-  arrow.addEventListener('mouseout', () => {
-    arrow.style.color = 'black';
-  });
-
   // Gallery
-  navGallery.addEventListener('mouseover', () => {
-    navGallery.style.color = hoverColor;
+  gallery.addEventListener('mouseover', () => {
+    gallery.style.color = hoverColor;
   });
 
-  navGallery.addEventListener('mouseout', () => {
-    navGallery.style.color = 'black';
+  gallery.addEventListener('mouseout', () => {
+    gallery.style.color = 'black';
   });
 
   // Subway
-  navSubway.addEventListener('mouseover', () => {
-    navSubway.style.color = hoverColor;
+  subway.addEventListener('mouseover', () => {
+    subway.style.color = hoverColor;
   });
 
-  navSubway.addEventListener('mouseout', () => {
-    navSubway.style.color = 'black';
+  subway.addEventListener('mouseout', () => {
+    subway.style.color = 'black';
   });
 
   // Taxi
-  navTaxi.addEventListener('mouseover', () => {
-    navTaxi.style.color = hoverColor;
+  taxi.addEventListener('mouseover', () => {
+    taxi.style.color = hoverColor;
   });
 
-  navTaxi.addEventListener('mouseout', () => {
-    navTaxi.style.color = 'black';
+  taxi.addEventListener('mouseout', () => {
+    taxi.style.color = 'black';
   });
 
   // Times
-  navTimes.addEventListener('mouseover', () => {
-    navTimes.style.color = hoverColor;
+  times.addEventListener('mouseover', () => {
+    times.style.color = hoverColor;
   });
 
-  navTimes.addEventListener('mouseout', () => {
-    navTimes.style.color = 'black';
+  times.addEventListener('mouseout', () => {
+    times.style.color = 'black';
   });
 
   // Contact
-  navContact.addEventListener('mouseover', () => {
-    navContact.style.color = hoverColor;
+  contact.addEventListener('mouseover', () => {
+    contact.style.color = hoverColor;
   });
 
-  navContact.addEventListener('mouseout', () => {
-    navContact.style.color = 'black';
+  contact.addEventListener('mouseout', () => {
+    contact.style.color = 'black';
   });
 
   // About
-  navAbout.addEventListener('mouseover', () => {
-    navAbout.style.color = hoverColor;
+  about.addEventListener('mouseover', () => {
+    about.style.color = hoverColor;
   });
 
-  navAbout.addEventListener('mouseout', () => {
-    navAbout.style.color = 'black';
+  about.addEventListener('mouseout', () => {
+    about.style.color = 'black';
+  });
+
+  // Times footer
+  footer.addEventListener('mouseover', () => {
+    footer.style.color = hoverColor;
+  });
+
+  footer.addEventListener('mouseout', () => {
+    footer.style.color = 'black';
+  });
+
+  // Instagram
+  instagram.addEventListener('mouseover', () => {
+    instagram.style.color = hoverColor;
+  });
+
+  instagram.addEventListener('mouseout', () => {
+    instagram.style.color = 'black';
+  });
+
+  // Twitter
+  twitter.addEventListener('mouseover', () => {
+    twitter.style.color = hoverColor;
+  });
+
+  twitter.addEventListener('mouseout', () => {
+    twitter.style.color = 'black';
+  });
+
+  // Youtube
+  youtube.addEventListener('mouseover', () => {
+    youtube.style.color = hoverColor;
+  });
+
+  youtube.addEventListener('mouseout', () => {
+    youtube.style.color = 'black';
   });
 
   const colors = ['#8904B1', 'blue', 'orange', 'yellow', 'green', '#d50000'];
@@ -145,63 +175,63 @@ window.addEventListener('load', () => {
           });
 
           // Gallery
-          navGallery.addEventListener('mouseover', () => {
-            navGallery.style.color = eintragData[i];
+          gallery.addEventListener('mouseover', () => {
+            gallery.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navGallery.addEventListener('mouseout', () => {
-            navGallery.style.color = 'black';
+          gallery.addEventListener('mouseout', () => {
+            gallery.style.color = 'black';
           });
 
           // Subway
-          navSubway.addEventListener('mouseover', () => {
-            navSubway.style.color = eintragData[i];
+          subway.addEventListener('mouseover', () => {
+            subway.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navSubway.addEventListener('mouseout', () => {
-            navSubway.style.color = 'black';
+          subway.addEventListener('mouseout', () => {
+            subway.style.color = 'black';
           });
 
           // Taxi
-          navTaxi.addEventListener('mouseover', () => {
-            navTaxi.style.color = eintragData[i];
+          taxi.addEventListener('mouseover', () => {
+            taxi.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navTaxi.addEventListener('mouseout', () => {
-            navTaxi.style.color = 'black';
+          taxi.addEventListener('mouseout', () => {
+            taxi.style.color = 'black';
           });
 
           // Times
-          navTimes.addEventListener('mouseover', () => {
-            navTimes.style.color = eintragData[i];
+          times.addEventListener('mouseover', () => {
+            times.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navTimes.addEventListener('mouseout', () => {
-            navTimes.style.color = 'black';
+          times.addEventListener('mouseout', () => {
+            times.style.color = 'black';
           });
 
           // Contact
-          navContact.addEventListener('mouseover', () => {
-            navContact.style.color = eintragData[i];
+          contact.addEventListener('mouseover', () => {
+            contact.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navContact.addEventListener('mouseout', () => {
-            navContact.style.color = 'black';
+          contact.addEventListener('mouseout', () => {
+            contact.style.color = 'black';
           });
 
           // About
-          navAbout.addEventListener('mouseover', () => {
-            navAbout.style.color = eintragData[i];
+          about.addEventListener('mouseover', () => {
+            about.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navAbout.addEventListener('mouseout', () => {
-            navAbout.style.color = 'black';
+          about.addEventListener('mouseout', () => {
+            about.style.color = 'black';
           });
 
         });
@@ -210,4 +240,5 @@ window.addEventListener('load', () => {
     }
     contentWrapper.appendChild(newColor);
   }
+
 });

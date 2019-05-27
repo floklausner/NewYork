@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/colorPanel.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
@@ -10,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="../script/script.js"></script>
+    <script src="../script/timesChangeHoverColor.js"></script>
     <script src="../script/navAnimation.js" charset="utf-8"></script>
     <title>New York Times</title>
   </head>
@@ -22,7 +24,7 @@
             <i id="menu" class="fas fa-bars"></i>
           </div>
 
-          <a href="../index.html"><h1><p>new york</p></h1></a>
+          <a href="../index.html"><h1><p id="headline">new york</p></h1></a>
         </div>
 
         <div class="timesText">
@@ -31,32 +33,37 @@
             The paper is owned by The New York Times Company, which is publicly traded and is controlled by the Sulzberger family through a dual-class share structure. It has been owned by the family since 1896; A.G. Sulzberger, the paper's publisher, and his father, Arthur Ochs Sulzberger Jr., the company's chairman, are the fourth and fifth generation of the family to helm the paper.
           </p>
 
-          <a href="https://www.instagram.com/nytimes/?hl=de"><p>Instagram of the Times</p></a>
-          <a href="https://www.youtube.com/user/TheNewYorkTimes"><p>Youtube of the Times</p></a>
-          <a href="https://twitter.com/nytimes"><p>Twitter of the Times</p></a>
+          <a href="https://www.instagram.com/nytimes/?hl=de"><p id="timesIG">Instagram of the Times</p></a>
+          <a href="https://www.youtube.com/user/TheNewYorkTimes"><p id="timesYT">Youtube of the Times</p></a>
+          <a href="https://twitter.com/nytimes"><p id="timesTW">Twitter of the Times</p></a>
         </div>
 
         <div id="navbar">
-          <a href="gallery.html"><p>Gallery</p></a>
+          <a href="gallery.html"><p id="navGallery">Gallery</p></a>
           <br>
-          <a href="subway.html"><p>Subway</p></a>
+          <a href="subway.html"><p id="navSubway">Subway</p></a>
           <br>
-          <a href="taxi.html"><p>Taxi</p></a>
+          <a href="taxi.html"><p id="navTaxi">Taxi</p></a>
           <br>
-          <a href="times.html"><p>New York Times</p></a>
+          <a href="times.html"><p id="navTimes">New York Times</p></a>
           <!--<br>
-          <a href="flight.html"><p>Book a Flight</p></a>-->
+          <a href="pages/flight.html"><p>Book a Flight</p></a>-->
           <br>
-          <a href="contact.html"><p>Contact me</p></a>
+          <a href="contact.html"><p id="navContact">Contact me</p></a>
           <br>
-          <a href="about.html"><p>About me</p></a>
+          <a href="about.html"><p id="navAbout">About me</p></a>
         </div>
       </header>
 
-      <iframe src="https://www.youtube.com/embed/utLpeQb2oY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="youtube"></iframe>
+      <!-- <iframe src="https://www.youtube.com/embed/utLpeQb2oY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="youtube"></iframe> -->
 
       <div class="footer">
-        <a href="https://www.nytimes.com/subscription?campaignId=7UXFY&gclid=Cj0KCQjwtr_mBRDeARIsALfBZA5tnIP9kDQQGGvbPZXZVOUHyO_bSGCWVslRCdJg_uoO1SnSzQqDsFoaAonHEALw_wcB"><p>The New York Times</p></a>
+        <a href="https://www.nytimes.com/subscription?campaignId=7UXFY&gclid=Cj0KCQjwtr_mBRDeARIsALfBZA5tnIP9kDQQGGvbPZXZVOUHyO_bSGCWVslRCdJg_uoO1SnSzQqDsFoaAonHEALw_wcB"><p id="timesFooter">The New York Times</p></a>
+      </div>
+
+      <div id="colorPanel">
+        <div id="colorPanelWrapper">
+        </div>
       </div>
 
     </div>
