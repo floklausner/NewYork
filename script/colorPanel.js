@@ -145,63 +145,63 @@ window.addEventListener('load', () => {
           });
 
           // Gallery
-          navGallery.addEventListener('mouseover', () => {
-            navGallery.style.color = eintragData[i];
+          gallery.addEventListener('mouseover', () => {
+            gallery.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navGallery.addEventListener('mouseout', () => {
-            navGallery.style.color = 'black';
+          gallery.addEventListener('mouseout', () => {
+            gallery.style.color = 'black';
           });
 
           // Subway
-          navSubway.addEventListener('mouseover', () => {
-            navSubway.style.color = eintragData[i];
+          subway.addEventListener('mouseover', () => {
+            subway.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navSubway.addEventListener('mouseout', () => {
-            navSubway.style.color = 'black';
+          subway.addEventListener('mouseout', () => {
+            subway.style.color = 'black';
           });
 
           // Taxi
-          navTaxi.addEventListener('mouseover', () => {
-            navTaxi.style.color = eintragData[i];
+          taxi.addEventListener('mouseover', () => {
+            taxi.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navTaxi.addEventListener('mouseout', () => {
-            navTaxi.style.color = 'black';
+          taxi.addEventListener('mouseout', () => {
+            taxi.style.color = 'black';
           });
 
           // Times
-          navTimes.addEventListener('mouseover', () => {
-            navTimes.style.color = eintragData[i];
+          times.addEventListener('mouseover', () => {
+            times.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navTimes.addEventListener('mouseout', () => {
-            navTimes.style.color = 'black';
+          times.addEventListener('mouseout', () => {
+            times.style.color = 'black';
           });
 
           // Contact
-          navContact.addEventListener('mouseover', () => {
-            navContact.style.color = eintragData[i];
+          contact.addEventListener('mouseover', () => {
+            contact.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navContact.addEventListener('mouseout', () => {
-            navContact.style.color = 'black';
+          contact.addEventListener('mouseout', () => {
+            contact.style.color = 'black';
           });
 
           // About
-          navAbout.addEventListener('mouseover', () => {
-            navAbout.style.color = eintragData[i];
+          about.addEventListener('mouseover', () => {
+            about.style.color = eintragData[i];
             sessionStorage.setItem('hoverColor', eintragData[i]);
           });
 
-          navAbout.addEventListener('mouseout', () => {
-            navAbout.style.color = 'black';
+          about.addEventListener('mouseout', () => {
+            about.style.color = 'black';
           });
 
         });

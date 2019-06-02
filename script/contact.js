@@ -12,6 +12,17 @@ window.addEventListener('load', () => {
       navbar.style.left = '0vw';
       visible = true;
     }
+
+    $( document ).ready(function() {
+     Email.send({
+      Host : "smtp.yourisp.com",
+      Username : "username",
+      Password : "password",
+      To : 'klausnerflorian03@gmail.com',
+      From : "you@isp.com",
+      Subject : "This is the subject",
+      Body : "And this is the body"}).then( message => alert(message));
+    });
   });
 
 document.getElementById('button').addEventListener('click', () => {

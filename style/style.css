@@ -100,6 +100,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  background-position: center;
 }
 
 .galleryPage {
@@ -368,17 +369,7 @@ img {
   width: 100vw;
 }*/
 
-#taxi {
-  position: absolute;
-  margin-left: 37.5vw;
-  margin-top: 55.4vh;
-  width: 2.5vw;
-  height: 2.5vh;
-  cursor: pointer;
-  z-index: 1;
-}
-
-#circle {
+/* #circle {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -387,10 +378,22 @@ img {
   border-radius: 10000px;
   background-color: black;
   transition: transform 700ms;
+  cursor: po
+} */
+
+#taxi {
+  position: absolute;
+  margin-left: 35.4vw;
+  margin-top: 58.3vh;
+  width: 2.5vw;
+  height: 2.5vh;
+  cursor: pointer;
+  /* z-index: 1; */
+  background-color: white;
 }
 
 #canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   pointer-events: none;

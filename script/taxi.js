@@ -17,21 +17,40 @@ window.addEventListener('load', () => {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
 
-  document.getElementById('taxi').addEventListener('click', () => {
-    document.getElementById('circle').style.transform = 'scale(1.5, 1.5)';
-
-    setTimeout(() => {
-      window.open('../pages/taxiHistory.html', '_self');
-    }, 500);
-  });
-
   window.addEventListener('mousemove', (event) => {
+    let centerX = innerWidth / 2 - (innerHeight / 100) * 27;
+    let centerY = innerHeight / 2 + (innerHeight / 100) * 16.8;
+
     line.clearRect(0, 0, canvas.width, canvas.height);
     line.beginPath();
-    line.moveTo(innerWidth / 2 - (innerHeight / 100) * 21.5, innerHeight / 2 + (innerHeight / 100) * 16.8);
+    line.moveTo(centerX, centerY);
     line.lineTo(event.clientX, event.clientY);
     line.strokeStyle = '#c69143';
     line.stroke();
+
+    if (event.clientX < centerX + 10 &&
+        event.clientX > centerX - 10 &&
+        event.clientY < centerY + 10 &&
+        event.clientY > centerY - 10) {
+          document.getElementById('taxiPic')[0].style.cursor = 'pointer';
+        } else {
+          document.getElementById('taxiPic')[0].style.cursor = 'default';
+        }
+  });
+
+  window.addEventListener('click', (event) => {
+    let centerX = innerWidth / 2 - (innerHeight / 100) * 27;
+    let centerY = innerHeight / 2 + (innerHeight / 100) * 16.8;
+
+    if (event.clientX < centerX + 10 &&
+        event.clientX > centerX - 10 &&
+        event.clientY < centerY + 10 &&
+        event.clientY > centerY - 10) {
+          setTimeout(() => {
+            document.getElementById('circle').style.transform = 'scale(1.5, 1.5)';
+            window.open('../pages/taxiHistory.html', '_self');
+          }, 500);
+        }
   });
 
   window.addEventListener('resize', () => {
