@@ -8,8 +8,6 @@ window.addEventListener('load', () => {
   const times = document.getElementById('navTimes');
   const contact = document.getElementById('navContact');
   const about = document.getElementById('navAbout');
-  const instagram = document.getElementById('aboutIG');
-  const twitter = document.getElementById('aboutTW');
   let hoverColor;
 
   if (!sessionStorage.getItem('hoverColor')) {
@@ -88,24 +86,7 @@ window.addEventListener('load', () => {
   about.addEventListener('mouseout', () => {
     about.style.color = 'black';
   });
-
-  // Instagram
-  instagram.addEventListener('mouseover', () => {
-    instagram.style.backgroundColor = hoverColor;
-  });
-
-  instagram.addEventListener('mouseout', () => {
-    instagram.style.backgroundColor = '';
-  });
-
-  // Twitter
-  twitter.addEventListener('mouseover', () => {
-    twitter.style.backgroundColor = hoverColor;
-  });
-
-  twitter.addEventListener('mouseout', () => {
-    twitter.style.backgroundColor = '';
-  });
+  
 
   const colors = ['#8904B1', 'blue', 'orange', 'yellow', 'green', '#d50000'];
 

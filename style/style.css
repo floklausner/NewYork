@@ -211,27 +211,32 @@ h1 {
 }
 
 .textBoxAbout {
-  width: 42vw;
+  width: 60vw;
   margin: 0 auto;
-  padding-top: 2vh;
-  padding-bottom: 0.5vh;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+  padding: 1vw;
   text-align: justify;
   background-color: rgba(255, 255, 255, 0.4);
-  font-size: 2.2vh;
+  font-size: 1.7vh;
   font-family: 'Voces', cursive;
+}
+
+.textWrapperAbout {
+  float: right;
+  margin-top: 0%;
+  padding-top: 0%;
 }
 
 .aboutText {
   background-color: rgba(255, 0, 0, 0.5);
   padding: 2vh;
-  margin-bottom: 4.5vh;
+  width: 30vw;
+  /* margin-bottom: 4.5vh; */
 }
 
 .taskText {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2vh;
+  width: 30vw;
 }
 
 .socialAbout {
@@ -240,11 +245,17 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Voces', cursive;
+}
+
+.mePic img {
+  width: 20vw;
+  margin: 0%;
+  padding: 0%;
 }
 
 .socialAbout p {
   transition: all 0.5s linear;
-  border: 1px solid black;
   text-align: center;
   width: 10vw;
   padding: 0.5vh;
@@ -337,6 +348,10 @@ h1 {
 .timesText a:active {
   color: black;
 }
+
+/* #timesLogo {
+  margin-left: 30vw;
+} */
 
 /* #youtube {
   padding-left: 14.8vw;
