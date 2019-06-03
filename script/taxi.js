@@ -32,9 +32,9 @@ window.addEventListener('load', () => {
         event.clientX > centerX - 10 &&
         event.clientY < centerY + 10 &&
         event.clientY > centerY - 10) {
-          document.getElementById('taxiPic')[0].style.cursor = 'pointer';
+          document.getElementsByClassName('taxiPage')[0].style.cursor = 'pointer';
         } else {
-          document.getElementById('taxiPic')[0].style.cursor = 'default';
+          document.getElementsByClassName('taxiPage')[0].style.cursor = 'default';
         }
   });
 

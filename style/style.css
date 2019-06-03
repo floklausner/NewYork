@@ -230,6 +230,9 @@ h1 {
   background-color: rgba(255, 0, 0, 0.5);
   padding: 2vh;
   width: 30vw;
+  margin-right: 2vw;
+  margin-top: -41vh;
+  position: relative;
   /* margin-bottom: 4.5vh; */
 }
 
@@ -237,6 +240,8 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2vh;
   width: 30vw;
+  margin-right: 2vw;
+  position: relative;
 }
 
 .socialAbout {
@@ -373,11 +378,29 @@ img {
   float: left;
 }
 
+.map {
+  height: 80vh;
+  width: 50vh;
+  float: right;
+  margin-right: 10%;
+}
+
 .pictureMap {
   height: 80vh;
   width: 50vh;
   float: right;
   margin-right: 10%;
+  position: absolute;
+}
+
+#subwayText {
+  height: 80vh;
+  width: 50vh;
+  float: right;
+  margin-right: 10%;
+  position: absolute;
+  text-align: justify;
+  opacity: 0;
 }
 
 /*.taxiPic {
