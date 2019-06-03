@@ -2,13 +2,15 @@ window.addEventListener('load', () => {
 
   const picture = document.getElementById('subwayPic');
   const text = document.getElementById('subwayText');
+  const map = document.getElementById('map');
 
-  picture.addEventListener('mouseover', () => {
+  map.addEventListener('mouseover', () => {
     picture.style.display = 'none';
     text.style.display = 'inline';
   });
 
-  picture.addEventListener('mouseout', () => {
+  map.addEventListener('mouseout', () => {
+    picture.style.display = 'inline';
     text.style.display = 'none';
   });
 

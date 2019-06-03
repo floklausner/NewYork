@@ -88,7 +88,7 @@ h1 {
 }
 
 .subwayPage {
-  background: url('../images/islandWallpaper.jpg');
+  background: url('../images/galleryBackground.jpg');
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -110,14 +110,27 @@ h1 {
 }
 
 .timesPage {
-  background: rgba(0, 0, 0, 0.2);
+  background: url('../images/timesBackground.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
 #navbar {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 2.2vh;
+  overflow: hidden;
+  padding-left: 1.3vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  transition: all 0.3s linear;
+  width: 12vw;
+  position: absolute;
+  left: -14vw;
+}
+
+.aboutPage #navbar {
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 2.2vh;
   overflow: hidden;
   padding-left: 1.3vw;
@@ -378,11 +391,80 @@ img {
   float: left;
 }
 
+.lanes {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  width: 45vw;
+  margin-left: 16vw;
+  margin-top: -3vh;
+}
+
+.lanes h3 {
+  font-size: 1.2vw;
+  padding: 0.5vh;
+  width: auto;
+  font-family: 'Voces', cursive;
+}
+
+.lanes p {
+  padding: 0.5vh;
+  font-family: 'Voces', cursive;
+}
+
+#blueLane {
+  border-bottom: 5px solid #2850ad;
+}
+
+#blueLaneP {
+  font-size: 0.9vw;
+}
+
+#orangeLane {
+  border-bottom: 5px solid #ff6319;
+}
+
+#orangeLaneP {
+  font-size: 0.9vw;
+}
+
+#redLane {
+  border-bottom: 5px solid 	#ee352e;
+}
+
+#redLaneP {
+  font-size: 0.9vw;
+}
+
+#greenLane {
+  border-bottom: 5px solid #00933c;
+}
+
+#greenLaneP {
+  font-size: 0.9vw;
+}
+
+#yellowLane {
+  border-bottom: 5px solid #fccc0a;
+}
+
+#yellowLaneP {
+  font-size: 0.9vw;
+}
+
+#purpleLane {
+  border-bottom: 5px solid #b933ad;
+}
+
+#purpleLaneP {
+  font-size: 0.9vw;
+}
+
 .map {
   height: 80vh;
   width: 50vh;
   float: right;
   margin-right: 10%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .pictureMap {
@@ -394,13 +476,14 @@ img {
 }
 
 #subwayText {
+  font-size: 2.1vh;
   height: 80vh;
-  width: 50vh;
+  width: 40vh;
   float: right;
   margin-right: 10%;
-  position: absolute;
   text-align: justify;
-  opacity: 0;
+  display: none;
+  font-family: 'Voces', cursive;
 }
 
 /*.taxiPic {
