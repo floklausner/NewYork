@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
     line.moveTo(centerX, centerY);
     line.lineTo(event.clientX, event.clientY);
     line.strokeStyle = 'black';
-    line.lineWidth = '4';
+    line.lineWidth = '3';
     line.stroke();
 
     if (event.clientX < centerX + 10 &&
