@@ -5,13 +5,15 @@ window.addEventListener('load', () => {
   const map = document.getElementById('map');
 
   map.addEventListener('mouseover', () => {
-    picture.style.display = 'none';
+    picture.style.opacity = '0';
+    text.style.opacity = '1';
     text.style.display = 'inline';
   });
 
   map.addEventListener('mouseout', () => {
     picture.style.display = 'inline';
-    text.style.display = 'none';
+    text.style.opacity = '0';
+    picture.style.opacity = '1';
   });
 
 });

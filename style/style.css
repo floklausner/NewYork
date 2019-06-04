@@ -396,7 +396,7 @@ img {
   background: rgba(255, 255, 255, 0.5);
   width: 45vw;
   margin-left: 16vw;
-  margin-top: -3vh;
+  margin-top: -4.2vh;
 }
 
 .lanes h3 {
@@ -473,6 +473,7 @@ img {
   float: right;
   margin-right: 10%;
   position: absolute;
+  transition: opacity 500ms ease-in-out;
 }
 
 #subwayText {
@@ -481,9 +482,12 @@ img {
   width: 40vh;
   float: right;
   margin-right: 10%;
-  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: none;
   font-family: 'Voces', cursive;
+  transition: opacity 500ms ease-in-out;
 }
 
 /*.taxiPic {

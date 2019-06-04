@@ -17,6 +17,10 @@ window.addEventListener('load', () => {
     hoverColor = sessionStorage.getItem('hoverColor');
   }
 
+  // panel.addEventListener('click', () => {
+  //   panel.style.border = '4 solid red';
+  // });
+
   heading.addEventListener('mouseover', () => {
     heading.style.color = hoverColor;
   });
